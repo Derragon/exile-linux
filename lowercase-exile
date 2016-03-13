@@ -1,0 +1,20 @@
+#!/bin/bash  
+
+if [ ! -d "@Exile" ]; then
+	if [ ! -d "@exile" ]; then
+		echo "Please download/extract Client files."
+		exit 1
+	fi
+	echo "Exile is already lowercase!"
+fi
+
+if [ -d "@Exile" ]; then
+	for SRC in `find \@Exile -depth`
+do
+    DST=`dirname "${SRC}"`/`basename "${SRC}" | tr '[A-Z]' '[a-z]'`
+    if [ "${SRC}" != "${DST}" ]
+    then
+        [ ! -e "${DST}" ] && mv -T "${SRC}" "${DST}" || echo "${SRC} was not renamed"
+    fi
+done
+fi
