@@ -5,5 +5,5 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 dpkg --add-architecture i386
-apt-get install libc6 lib32gcc1 libtbb2 lib32stdc++6 mysql-server-5.6
+apt-get install libc6 lib32gcc1 lib32stdc++6 mysql-server-5.6
 apt-get install libc6:i386 libtbb2:i386
