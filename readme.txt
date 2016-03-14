@@ -12,6 +12,7 @@ Step 3: Install Arma 3 Server (You need to login to SteamCMD with your account)
     # login username password
     # force_install_dir exile-linux
     # app_update 233780 validate
+    # exit
     
 Step 4: Enter the 'exile-linux' directory and run the 'ubuntu-install-dependencies' script
     # cd exile-linux
