@@ -14,9 +14,9 @@ Step 3: Install Arma 3 Server (You need to login to SteamCMD with your account)
     # app_update 233780 validate
     # exit
     
-Step 4: Enter the 'exile-linux' directory and run the 'ubuntu-install-dependencies' script
+Step 4: Enter the 'exile-linux' directory and run the 'ubuntu-install-deps' script
     # cd exile-linux
-    # sudo ./ubuntu-install-dependencies
+    # sudo ./ubuntu-install-deps
     Note: Must be run with sudo
     
 Step 5: Download the Client files and unpack them
